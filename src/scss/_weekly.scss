@@ -1,0 +1,62 @@
+.weekly_wrapper {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  .weekly_btn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    @media screen and (min-width: 600px) {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    &.white {
+      background-color: #fff;
+      color: #000;
+    }
+    &.black {
+      background-color: #000;
+      color: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .weekly_content {
+    position: relative;
+    animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+      both;
+    width: 100%;
+    @media screen and (min-width: 600px) {
+      width: 300px;
+    }
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
+    color: #000;
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .topics {
+      text-align: left;
+      i.far {
+        margin-right: 10px;
+      }
+    }
+    &.withBorder {
+      border: 1px solid #aaa;
+    }
+  }
+}

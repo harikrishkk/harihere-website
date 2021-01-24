@@ -1,0 +1,14 @@
+.main_app_header {
+  &.mobile {
+    display: block;
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+  }
+  &.non-mobile {
+    display: none;
+    @media screen and (min-width: 601px) {
+      display: block;
+    }
+  }
+}

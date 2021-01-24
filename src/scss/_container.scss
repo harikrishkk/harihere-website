@@ -1,0 +1,79 @@
+// just an outer wrapper to hold everything together.
+.container {
+  width: 100vw;
+  text-align: center;
+  overflow: hidden;
+  &.mtop {
+    margin-top: 20px;
+  }
+  &.mbottom {
+    margin-bottom: 50px;
+  }
+  // controls the width of the content in desktop / mobile
+  .wrapper,
+  .course_offerings_wrapper {
+    width: 90vw;
+    margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      width: 60vw;
+      padding: 30px auto;
+    }
+    font-family: "Dosis", sans-serif;
+    .course_offering_header {
+      font-family: "Dosis", sans-serif;
+      letter-spacing: 4px;
+    }
+    .course_intro,
+    .live-demo {
+      font-size: 18px;
+      letter-spacing: 2px;
+      line-height: 29px;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+    .live-demo {
+      margin: 20px 0px;
+      font-weight: bold;
+    }
+  }
+
+  // The author photo
+  .main_header_img {
+    padding: 0;
+    @media screen and (min-width: 968px) {
+      max-width: 70%;
+    }
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .main_desc {
+    font-size: 18px;
+    font-family: "Dosis", sans-serif;
+    letter-spacing: 2px;
+    line-height: 29px;
+    background-color: #fff;
+  }
+  .rocket_img {
+    margin: 0 auto;
+  }
+
+  &.angular {
+    background-color: #c3002f;
+    color: #fff;
+    @media screen and (min-width: 769px) {
+      margin-top: 100px;
+    }
+
+    padding-bottom: 20px;
+  }
+  &.react {
+    background-color: #fff;
+    color: #000;
+    @media screen and (min-width: 769px) {
+      margin-top: 100px;
+    }
+  }
+}

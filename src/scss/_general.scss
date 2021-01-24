@@ -1,0 +1,60 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Dosis", sans-serif;
+  overflow-x: hidden;
+}
+.rootWrapper {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+.main_heading {
+  color: #000;
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+  margin: 20px auto;
+  width: 90%;
+  @media screen and (min-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+.repeat_bg_container {
+  // height: auto;
+  // overflow: hidden;
+  // background-image: url("../images/pattern.png");
+  // background-repeat: repeat;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+a {
+  text-decoration: none;
+}
+.social_icons {
+  color: #000;
+  margin: 0px 5px;
+}
+
+.queries {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  .heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .item {
+    margin: 0 5px;
+    i {
+      margin-right: 5px;
+    }
+    font-weight: bold;
+  }
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
